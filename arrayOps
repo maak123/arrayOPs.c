@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+void main(){
+int arr[10];
+int i;
+int j;
+for(i=0;i<10;i++){
+arr[i]=i+1;
+}
+for(j=0;j<10;j++){
+//printf("%d \n",arr[j]);
+}
+char c[7]={'A','B','C','D','E','F','H'};
+int k;
+for(k=0;k<10;k++){
+//printf("%c \n",c[k]);
+
+}
+int a;
+int b[10];
+for(a=0;a<10;a++){
+b[a]=a*a;
+
+}
+for(a=0;a<10;a++){
+//printf("%d",b[a]);
+}
+double num[5]={22.5,33.7,10.2,45.23,6.78};
+printf("%d",getBig(num));
+}
+int getBig(int arr[]){
+int a;
+int big=arr[0];
+for (a=0;a<5;a++){
+if(arr[a]<arr[a+1]){
+big=arr[a+1];
+
+}}
+return big;}
